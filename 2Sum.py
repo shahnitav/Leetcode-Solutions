@@ -1,10 +1,10 @@
 from typing import List
 '''
+    LC - https://leetcode.com/problems/two-sum/
     Need hashmap to store the remaining difference needed for each index
     index from 0 to len will check the difference betweeen target and value of index
     Add it two a hashmap based on the index. (As we are searching (int) a list would be easier to search through)
     Check if the new value is the required difference in the hashmap already otherwise add the different to the map.
-
 '''
 
 class Solution:
