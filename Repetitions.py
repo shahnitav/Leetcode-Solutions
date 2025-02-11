@@ -31,6 +31,20 @@ class Repetitions:
             r_index += 1
         return maxRep
 
+# Better solution  
+def rep():
+    s = str(input())
+    count=1
+    res=1
+    for i in range(len(s)-1):
+        if s[i]==s[i+1]:
+            count+=1
+            res=max(res,count)
+        else:
+            count=1
+ 
+    print(res)
+
 def main():
     # Input from the user
     inp = str(input())
